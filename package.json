@@ -1,0 +1,33 @@
+{
+  "name": "opentelemetry-node-instrumentation",
+  "version": "1.0.0",
+  "description": "OpenTelemetry node  automatic instrumentation package",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=dev OTEL_LOG_LEVEL=DEBUG nodemon ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "dist/src/**/*.js",
+    "dist/src/**/*.d.ts",
+    "dist/src/**/*.js.map",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/node": "^17.0.7",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "^1.0.4",
+    "@opentelemetry/auto-instrumentations-node": "^0.27.1",
+    "@opentelemetry/exporter-collector-grpc": "^0.25.0",
+    "@opentelemetry/sdk-node": "^0.27.0",
+    "opentelemetry-instrumentation-amqplib": "^0.27.0",
+    "opentelemetry-instrumentation-mongoose": "^0.27.0"
+  }
+}
